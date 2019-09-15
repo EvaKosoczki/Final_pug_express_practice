@@ -1,0 +1,18 @@
+extends layout
+block content
+	html
+		body
+			table.table
+				thead
+					tr
+						th(scope="col") Id
+						th(scope="col") Name
+						th(scope="col") Department
+						th(scope="col") Email
+				tbody
+					each value in data
+						tr
+							td #{value.id}
+							td #{value.name}
+							td #{value.department}
+							td #{value.email}       
