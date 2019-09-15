@@ -20,11 +20,11 @@ router.get('/users', async (req, res, next) => {
 });
 
 
-router.delete('/users/api/:id', async (req, res, next) => {
+router.delete('/users/:id', async (req, res, next) => {
   const data = await DBSmp.delete(req.params.id)
-  res.json({
+  res.json(
     data
-  });
+  );
 });
 
 

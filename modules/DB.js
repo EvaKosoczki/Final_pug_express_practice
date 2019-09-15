@@ -19,7 +19,9 @@ module.exports = class DB {
 
 
   create() {}
+
   update() {}
+  
   async delete(id) {
     const sql = `
     delete from employees where id=${id}
